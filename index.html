@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b87f2ffcd2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Mahesh</span> Singha<br> From India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------about-------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>As a website designer specializing in HTML, CSS and JavaScript,
+                        I play a crucial role in shaping the visual and interactive
+                        elements of websites. My work ensures that websites are not
+                        only aesthetically pleasing but also functional and user-friendly.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li><br>
+                            <li><span>Languages</span><br>C++, C, Java, Python</li><br>
+                            <li><span>Technologies and Libraries</span><br>HTML, CSS, JavaScript</li><br>
+                            <li><span>Relevant Courses</span><br>Data Structure, Algorithm, OOPs, DBMS, Networking</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 - current</span><br>UI/UX Designing</li><br>
+                            <li><span>2023 - 2024</span><br>Web Application Developnent by open source</li><br>
+                            <li><span>2022 - 2023</span><br>Learning Java for Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>B.tech in computer science and Engineering from RKMGEC</li><br>
+                            <li><span>2018</span><br>WBCHSE from SDPUVC</li><br>
+                            <li><span>2016</span><br>WBBSE from Tithpukur High School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------services---------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I am a creative and technical professional responsible
+                        for designing and creating the visual aspects of websites. 
+                        Your role involves a blend of artistry and technical skills to
+                        build user-friendly, aesthetically pleasing, and functional websites.</p>
+                        <a href="#"> Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>As a UI/UX designer, I play a critical role in creating digital
+                        products that are not only visually stunning but also user-friendly
+                        and efficient. My expertise in both user interface design and user
+                        experience design ensures that I deliver products that meet user needs
+                        and provide a satisfying interaction. My work is essential in enhancing
+                        the usability and overall success of digital products.</p>
+                        <a href="#"> Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-apple"></i>
+                    <h2>App Design</h2>
+                    <p>I am a crucial part of the mobile app development process,
+                        combining creativity with technical skills to build engaging,
+                        user-friendly applications. My expertise in both visual design
+                        and user experience ensures that the apps I create not only look
+                        great but also function seamlessly, providing users with a satisfying
+                        and efficient experience.</p>
+                        <a href="#"> Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------Portfolio------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>This Application connect you to the talented people 
+                            around the world. Download it from play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>My music apps are designed to provide an enjoyable 
+                            and immersive listening experience for music lovers everywhere.
+                            Download it from play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>My shopping apps ensure a convenient, enjoyable, and 
+                            seamless shopping journey from start to finish. 
+                            Discover a new way to shop online with an app designed 
+                            for your needs. Download it from play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- -------------Contact-------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>maheshroyalwari@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>8927351526</p>
+                    <div class="social icons">
+                        <a href="https://www.facebook.com/mahesh.singha.395/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="https://www.instagram.com/mahesh_1729/?hl=en"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/mahesh-singha-350a16211/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Messege" row="6", placeholder="Your messege"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+        <p>Copyright ©️ Mahesh Portfolio.com Made with by <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0"
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px"
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzAxObVxnCRwmmWSaUPZq8XuQY5Q7dO2YSS6BIkURj4izYMVFvsZmNzY7-RHJimMkHTIw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Messege sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+</body>
+</html>
